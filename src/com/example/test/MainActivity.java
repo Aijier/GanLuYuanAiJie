@@ -25,16 +25,10 @@ private Button button5;
          button3=(Button)this.findViewById(R.id.button3);//获取button1
          button4=(Button)this.findViewById(R.id.button4);//获取button1
          button5=(Button)this.findViewById(R.id.button5);//获取button1
-         //ghighk
-         //ghighk
-         //ghighk
-         //ghighk
-         //ghighk
-         //ghighk
-         //ghighk
-         //ghighk
-         //ghighk
-         //ghighk
+         // button1=(Button)this.findViewById(R.id.button1);//获取button1
+         // button1=(Button)this.findViewById(R.id.button1);//获取button1
+         // button1=(Button)this.findViewById(R.id.button1);//获取button1
+         
          button1.setOnClickListener(new View.OnClickListener() {//点击button事件
 			
 			@Override
