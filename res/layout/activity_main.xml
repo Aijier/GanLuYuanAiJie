@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<Button 
+    android:id="@+id/button1"
+    android:layout_marginTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="朋友圈"
+    android:textSize="16sp"
+    android:textColor="#000000"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:drawableLeft="@drawable/peng"/>
+<Button 
+    android:id="@+id/button2"
+    android:layout_marginTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="扫一扫"
+    android:textSize="16sp"
+    android:textColor="#000000"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:drawableLeft="@drawable/sao"/>
+<Button 
+    android:id="@+id/button3"
+    android:layout_marginTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="摇一摇"
+    android:textSize="16sp"
+    android:textColor="#000000"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:drawableLeft="@drawable/yao"/>
+<Button 
+    android:id="@+id/button4"
+    android:layout_marginTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="购物"
+    android:textSize="16sp"
+    android:textColor="#000000"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:drawableLeft="@drawable/gou"/>
+<Button 
+    android:id="@+id/button5"
+    android:layout_marginTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="游戏"
+    android:textSize="16sp"
+    android:textColor="#000000"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:drawableLeft="@drawable/you"/>
+
+
+</LinearLayout>
