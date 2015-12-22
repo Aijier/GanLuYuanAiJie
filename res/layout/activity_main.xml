@@ -14,7 +14,8 @@
     android:paddingTop="5dp"
     android:paddingRight="5dp"
     android:paddingBottom="5dp"
-    android:drawableLeft="@drawable/peng"/>
+    android:drawableLeft="@drawable/peng"
+    android:drawableRight="@drawable/zuo"/>
 <Button 
     android:id="@+id/button2"
     android:layout_marginTop="4dp"
@@ -27,7 +28,8 @@
     android:paddingTop="5dp"
     android:paddingRight="5dp"
     android:paddingBottom="5dp"
-    android:drawableLeft="@drawable/sao"/>
+    android:drawableLeft="@drawable/sao"
+    android:drawableRight="@drawable/zuo"/>
 <Button 
     android:id="@+id/button3"
     android:layout_marginTop="4dp"
@@ -40,7 +42,8 @@
     android:paddingTop="5dp"
     android:paddingRight="5dp"
     android:paddingBottom="5dp"
-    android:drawableLeft="@drawable/yao"/>
+    android:drawableLeft="@drawable/yao"
+    android:drawableRight="@drawable/zuo"/>
 <Button 
     android:id="@+id/button4"
     android:layout_marginTop="4dp"
@@ -53,7 +56,8 @@
     android:paddingTop="5dp"
     android:paddingRight="5dp"
     android:paddingBottom="5dp"
-    android:drawableLeft="@drawable/gou"/>
+    android:drawableLeft="@drawable/gou"
+    android:drawableRight="@drawable/zuo"/>
 <Button 
     android:id="@+id/button5"
     android:layout_marginTop="4dp"
@@ -66,7 +70,8 @@
     android:paddingTop="5dp"
     android:paddingRight="5dp"
     android:paddingBottom="5dp"
-    android:drawableLeft="@drawable/you"/>
+    android:drawableLeft="@drawable/you"
+    android:drawableRight="@drawable/zuo"/>
 
 
 </LinearLayout>
