@@ -4,6 +4,7 @@ import com.example.listview.ListViewDemoActicity;
 import com.example.movie.MovieActivity;
 import com.example.qiche.QiCheActivity;
 import com.example.testview.TestActivity;
+import com.example.you.YouActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,6 +24,7 @@ private Button button6;
 private Button button7;
 private Button button8;
 private Button button9;
+private Button button10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,8 @@ private Button button9;
          button6=(Button)this.findViewById(R.id.button6);//获取button6
          button8=(Button)this.findViewById(R.id.button8);//获取button8
          button9=(Button)this.findViewById(R.id.button9);//获取button9
+         button10=(Button)this.findViewById(R.id.button10);//获取button10
+         
          
          button7=(Button)this.findViewById(R.id.button7);//获取button7
          button7.setOnClickListener(new OnClickListener() {
@@ -135,6 +139,17 @@ private Button button9;
  			}
  		});
 
+         button10.setOnClickListener(new View.OnClickListener() {//点击button事件
+  			
+  			@Override
+  			public void onClick(View v) {
+  				//创建意图
+  				Intent intent=new Intent(MainActivity.this,YouActivity.class);
+  				//启动意图
+  				startActivity(intent);
+  				
+  			}
+  		});
 
 
 
