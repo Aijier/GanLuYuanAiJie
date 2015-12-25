@@ -1,5 +1,7 @@
 package com.example.test;
 
+import com.example.benzi.BenZiActivity;
+import com.example.guizi.GuiZiActivity;
 import com.example.listview.ListViewDemoActicity;
 import com.example.movie.MovieActivity;
 import com.example.qiche.QiCheActivity;
@@ -25,6 +27,8 @@ private Button button7;
 private Button button8;
 private Button button9;
 private Button button10;
+private Button buttonB;
+private Button buttonU;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,8 @@ private Button button10;
          button8=(Button)this.findViewById(R.id.button8);//获取button8
          button9=(Button)this.findViewById(R.id.button9);//获取button9
          button10=(Button)this.findViewById(R.id.button10);//获取button10
+         buttonB=(Button)this.findViewById(R.id.buttonB);//获取buttonB
+         buttonU=(Button)this.findViewById(R.id.buttonU);//获取buttonU
          
          
          button7=(Button)this.findViewById(R.id.button7);//获取button7
@@ -151,9 +157,32 @@ private Button button10;
   			}
   		});
 
+         buttonB.setOnClickListener(new View.OnClickListener() {//点击button事件
+   			
+   			@Override
+   			public void onClick(View v) {
+   				//创建意图
+   				Intent intent=new Intent(MainActivity.this,GuiZiActivity.class);
+   				//启动意图
+   				startActivity(intent);
+   				
+   			}
+   		});
+         buttonU.setOnClickListener(new View.OnClickListener() {//点击button事件
+    			
+    			@Override
+    			public void onClick(View v) {
+    				//创建意图
+    				Intent intent=new Intent(MainActivity.this,BenZiActivity.class);
+    				//启动意图
+    				startActivity(intent);
+    				
+    			}
+    		});
 
 
 
+         
         
          
     }

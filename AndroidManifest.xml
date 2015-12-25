@@ -24,6 +24,9 @@
         <activity android:name="com.example.movie.MovieActivity"></activity>
         <activity android:name="com.example.qiche.QiCheActivity"></activity>
         <activity android:name="com.example.you.YouActivity"></activity>
+        <activity android:name="com.example.guizi.GuiZiActivity"></activity>
+        <activity android:name="com.example.benzi.BenZiActivity"></activity>
+        
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
