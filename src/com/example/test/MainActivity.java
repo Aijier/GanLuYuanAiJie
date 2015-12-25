@@ -1,6 +1,9 @@
 package com.example.test;
 
 import com.example.listview.ListViewDemoActicity;
+import com.example.movie.MovieActivity;
+import com.example.qiche.QiCheActivity;
+import com.example.testview.TestActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,6 +21,8 @@ private Button button4;
 private Button button5;
 private Button button6;
 private Button button7;
+private Button button8;
+private Button button9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +34,10 @@ private Button button7;
          button4=(Button)this.findViewById(R.id.button4);//获取button4
          button5=(Button)this.findViewById(R.id.button5);//获取button5
          button6=(Button)this.findViewById(R.id.button6);//获取button6
-         button7=(Button)this.findViewById(R.id.button7);//获取button6
+         button8=(Button)this.findViewById(R.id.button8);//获取button8
+         button9=(Button)this.findViewById(R.id.button9);//获取button9
+         
+         button7=(Button)this.findViewById(R.id.button7);//获取button7
          button7.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -92,18 +100,42 @@ private Button button7;
   				
   			}
   		});
-
          button6.setOnClickListener(new View.OnClickListener() {//点击button事件
    			
    			@Override
    			public void onClick(View v) {
    				//创建意图
-   				Intent intent=new Intent(MainActivity.this,ZhiFuBaoActivity.class);
+   				Intent intent=new Intent(MainActivity.this,TestActivity.class);
    				//启动意图
    				startActivity(intent);
    				
    			}
    		});
+         button8.setOnClickListener(new View.OnClickListener() {//点击button事件
+    			
+    			@Override
+    			public void onClick(View v) {
+    				//创建意图
+    				Intent intent=new Intent(MainActivity.this,MovieActivity.class);
+    				//启动意图
+    				startActivity(intent);
+    				
+    			}
+    		});
+
+         button9.setOnClickListener(new View.OnClickListener() {//点击button事件
+ 			
+ 			@Override
+ 			public void onClick(View v) {
+ 				//创建意图
+ 				Intent intent=new Intent(MainActivity.this,QiCheActivity.class);
+ 				//启动意图
+ 				startActivity(intent);
+ 				
+ 			}
+ 		});
+
+
 
 
 

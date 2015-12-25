@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView 
+        android:id="@+id/priceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"/>
+    <TextView 
+        android:id="@+id/colorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="颜色"/>
+    
+    <TextView 
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="品牌"/>
+    
+      <TextView 
+        android:id="@+id/actorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="演员"/>
+      <TextView 
+        android:id="@+id/numberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车牌号"/>
+    	
+       <TextView 
+        android:id="@+id/companyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生产商"/> 
+    
+
+</LinearLayout>
