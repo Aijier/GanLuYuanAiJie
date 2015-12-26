@@ -4,6 +4,7 @@ import com.example.benzi.BenZiActivity;
 import com.example.guizi.GuiZiActivity;
 import com.example.listview.ListViewDemoActicity;
 import com.example.movie.MovieActivity;
+import com.example.phone.PhoneActivity;
 import com.example.qiche.QiCheActivity;
 import com.example.testview.TestActivity;
 import com.example.you.YouActivity;
@@ -29,6 +30,7 @@ private Button button9;
 private Button button10;
 private Button buttonB;
 private Button buttonU;
+private Button buttonT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +47,7 @@ private Button buttonU;
          button10=(Button)this.findViewById(R.id.button10);//获取button10
          buttonB=(Button)this.findViewById(R.id.buttonB);//获取buttonB
          buttonU=(Button)this.findViewById(R.id.buttonU);//获取buttonU
-         
+         buttonT=(Button)this.findViewById(R.id.buttonT);
          
          button7=(Button)this.findViewById(R.id.button7);//获取button7
          button7.setOnClickListener(new OnClickListener() {
@@ -179,7 +181,14 @@ private Button buttonU;
     				
     			}
     		});
-
+         buttonT.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent(MainActivity.this,PhoneActivity.class);
+				startActivity(intent);
+			}
+		});
 
 
          
