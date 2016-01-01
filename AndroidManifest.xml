@@ -28,6 +28,7 @@
         <activity android:name="com.example.benzi.BenZiActivity"></activity>
         <activity android:name="com.example.phone.PhoneActivity"></activity>
         <activity android:name="com.example.jisuan.JiSuanActivity"></activity>
+        <activity android:name="com.example.buju.BuJuActivity"></activity>
         
         <activity
             android:name=".MainActivity"

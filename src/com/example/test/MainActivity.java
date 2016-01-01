@@ -1,6 +1,7 @@
 package com.example.test;
 
 import com.example.benzi.BenZiActivity;
+import com.example.buju.BuJuActivity;
 import com.example.guizi.GuiZiActivity;
 import com.example.jisuan.JiSuanActivity;
 import com.example.listview.ListViewDemoActicity;
@@ -33,6 +34,7 @@ private Button buttonB;
 private Button buttonU;
 private Button buttonT;
 private Button buttonJ;
+private Button buttonP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,7 @@ private Button buttonJ;
          buttonU=(Button)this.findViewById(R.id.buttonU);//获取buttonU
          buttonT=(Button)this.findViewById(R.id.buttonT);
          buttonJ=(Button)this.findViewById(R.id.buttonJ);
+         buttonP=(Button)this.findViewById(R.id.buttonP);
          button7=(Button)this.findViewById(R.id.button7);//获取button7
          button7.setOnClickListener(new OnClickListener() {
 			
@@ -199,6 +202,14 @@ private Button buttonJ;
 				startActivity(intent);
 			}
 		});
+         buttonP.setOnClickListener(new View.OnClickListener() {
+ 			
+ 			@Override
+ 			public void onClick(View v) {
+ 				Intent intent=new Intent(MainActivity.this,BuJuActivity.class);
+ 				startActivity(intent);
+ 			}
+ 		});
 
 
          

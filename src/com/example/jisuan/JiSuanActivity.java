@@ -38,6 +38,8 @@ public class JiSuanActivity extends Activity implements OnClickListener {
 		Button cheng = (Button) findViewById(R.id.cheng);
 		Button clean = (Button) findViewById(R.id.clean);
 		Button delete = (Button) findViewById(R.id.delete);
+		Button history = (Button) findViewById(R.id.history);
+		
 		OnClickListener numberOnClickListener = new OnClickListener() {
 
 			@Override
@@ -71,6 +73,7 @@ public class JiSuanActivity extends Activity implements OnClickListener {
 		deng.setOnClickListener(this);
 		clean.setOnClickListener(this);
 		delete.setOnClickListener(this);
+		history.setOnClickListener(this);
 
 	}
 
@@ -156,6 +159,14 @@ public class JiSuanActivity extends Activity implements OnClickListener {
 			break;
 		default:
 			break;
+		case R.id.history:
+			Button history = (Button) v;
+			if (TextUtils.isEmpty(tempResult)) {
+
+			} else {
+				editText.setText(tempResult);
+			}
+
 		}
 	}
 
@@ -196,8 +207,9 @@ public class JiSuanActivity extends Activity implements OnClickListener {
 			double dou2=Double.parseDouble(num2);
 			result=dou1/dou2;
 		}
+		
 		return result+"";
-
+   
 	}
 
 }
