@@ -9,6 +9,8 @@ import com.example.movie.MovieActivity;
 import com.example.phone.PhoneActivity;
 import com.example.qiche.QiCheActivity;
 import com.example.testview.TestActivity;
+import com.example.tongzhi.GuangBoActivity;
+import com.example.xiangdui.XiangDuiActivity;
 import com.example.you.YouActivity;
 
 import android.app.Activity;
@@ -35,10 +37,12 @@ private Button buttonU;
 private Button buttonT;
 private Button buttonJ;
 private Button buttonP;
-
+private Button buttonX;
+private Button buttonG;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
         setContentView(R.layout.activity_main);//加载布局文件
          button1=(Button)this.findViewById(R.id.button1);//获取button1
          button2=(Button)this.findViewById(R.id.button2);//获取button2
@@ -54,6 +58,8 @@ private Button buttonP;
          buttonT=(Button)this.findViewById(R.id.buttonT);
          buttonJ=(Button)this.findViewById(R.id.buttonJ);
          buttonP=(Button)this.findViewById(R.id.buttonP);
+         buttonX=(Button)this.findViewById(R.id.buttonX);
+         buttonG=(Button)this.findViewById(R.id.buttonG);
          button7=(Button)this.findViewById(R.id.button7);//获取button7
          button7.setOnClickListener(new OnClickListener() {
 			
@@ -210,7 +216,25 @@ private Button buttonP;
  				startActivity(intent);
  			}
  		});
+         buttonX.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent(MainActivity.this,XiangDuiActivity.class);
+				startActivity(intent);
+			}
+		});
+         buttonG.setOnClickListener(new View.OnClickListener() {
+ 			
+ 			@Override
+ 			public void onClick(View v) {
+ 				Intent intent=new Intent(MainActivity.this,GuangBoActivity.class);
+ 				startActivity(intent);
+ 			}
+ 		});
 
+                 
+         
 
          
         

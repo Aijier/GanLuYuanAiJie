@@ -14,7 +14,7 @@ import android.widget.EditText;
 public class JiSuanActivity extends Activity implements OnClickListener {
 	private EditText editText;
 	private String tempResult;
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -153,6 +153,7 @@ public class JiSuanActivity extends Activity implements OnClickListener {
 						deleteEditContent.length() - 1));
 			}
 			break;
+			
 		case R.id.clean:
 			tempResult = "";
 			editText.setText("");
@@ -189,7 +190,6 @@ public class JiSuanActivity extends Activity implements OnClickListener {
 			double dou1 = Double.parseDouble(num1);
 			double dou2 = Double.parseDouble(num2);
 			result = dou1 - dou2;
-			
 		}
 		if(equalEditContent.contains("*")){
 			String [] split=equalEditContent.split("\\*");
