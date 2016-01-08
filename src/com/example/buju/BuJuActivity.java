@@ -10,5 +10,12 @@ public class BuJuActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_buju);
+
+		StringBuffer buffer = new StringBuffer();
+		buffer.append("dsfaf");
+
+		String s = new String();
+		s = "dsfaf";
+
 	}
 }

@@ -176,36 +176,106 @@ public class JiSuanActivity extends Activity implements OnClickListener {
 		double result = 0l;
 		if (equalEditContent.contains("+")) {
 			String[] split = equalEditContent.split("\\+");
-			String num1 = split[0];
+			double dou1=0.0;
+			//如果没有输入任何东西
+			if(split.length==0){
+				result=0.0;
+			}
+			//如果没有输入只有一个数字
+			if(split.length>0){
+				String num1=split[0];
+				dou1=Double.parseDouble(num1);
+				result=dou1;
+			}
+			//如果没有输入有两个数字
+			if(split.length>1){
+				String num2=split[1];
+				double dou2=Double.parseDouble(num2);
+				result=dou1+dou2;
+			}
+			/*String num1 = split[0];
 			String num2 = split[1];
 			double dou1 = Double.parseDouble(num1);
 			double dou2 = Double.parseDouble(num2);
-			result = dou1 + dou2;
+			result = dou1 + dou2;*/
 			
 		}
 		if (equalEditContent.contains("-")) {
 			String[] split = equalEditContent.split("\\-");
-			String num1 = split[0];
+			double dou1=0.0;
+			//如果没有输入任何东西
+			if(split.length==0){
+				result=0.0;
+			}
+			//如果没有输入只有一个数字
+			if(split.length>0){
+				String num1=split[0];
+				dou1=Double.parseDouble(num1);
+				result=dou1;
+			}
+			//如果没有输入只有两个数字
+			if(split.length>1){
+				String num2=split[1];
+				double dou2=Double.parseDouble(num2);
+				result=dou1-dou2;
+			}
+			/*String num1 = split[0];
 			String num2 = split[1];
 			double dou1 = Double.parseDouble(num1);
 			double dou2 = Double.parseDouble(num2);
-			result = dou1 - dou2;
+			result = dou1 - dou2;*/
 		}
 		if(equalEditContent.contains("*")){
 			String [] split=equalEditContent.split("\\*");
-			String num1=split[0];
+			double dou1=0.0;
+			//如果没有输入任何东西
+			if(split.length==0){
+				result=0.0;
+			}
+			//如果没有输入只有一个数字
+			if(split.length>0){
+				String num1=split[0];
+				dou1=Double.parseDouble(num1);
+				result=dou1;
+			}
+			//如果没有输入有两个数字
+			if(split.length>1){
+				String num2=split[1];
+			double dou2=Double.parseDouble(num2);
+			result=dou1*dou2;
+			}
+			
+			/*String num1=split[0];
 			String num2=split[1];
 			double dou1=Double.parseDouble(num1);
 			double dou2=Double.parseDouble(num2);
 			result=dou1*dou2;
-		}
+*/		}
 		if(equalEditContent.contains("/")){
 			String [] split=equalEditContent.split("\\/");
-			String num1=split[0];
+			/*String num1=split[0];
 			String num2=split[1];
 			double dou1=Double.parseDouble(num1);
 			double dou2=Double.parseDouble(num2);
-			result=dou1/dou2;
+			result=dou1/dou2;*/
+			double dou1=0.0;
+			//如果没有输入任何东西
+			if(split.length==0){
+				result=0.0;
+			}
+			//如果没有输入只有一个数字
+			if(split.length>0){
+				String num1=split[0];
+				dou1=Double.parseDouble(num1);
+				result=dou1;
+			}
+			//如果没有输入有两个数字
+			if(split.length>1){
+				String num2=split[1];
+				double dou2=Double.parseDouble(num2);
+				result=dou1/dou2;
+			}
+			
 		}
 		
 		return result+"";
